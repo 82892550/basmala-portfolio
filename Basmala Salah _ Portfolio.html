@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Basmala Salah | Cybersecurity Student & Aspiring SOC Analyst</title>
+<meta name="description" content="Portfolio of Basmala Salah, a Computer Science student building practical skills in cybersecurity, SOC and Blue Team operations, with experience in digital marketing and content creation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1118;--bg2:#101822;--card:#131d29;--line:#223244;--tx:#e8eef5;--mu:#8fa3b8;--ac:#38bdf8;--ac2:#22d3ee;--warn:#fbbf24;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+.alt{background:var(--bg2)}
+h1,h2,h3{line-height:1.2;margin:0}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:8px}
+.eyebrow{font:500 .78rem "JetBrains Mono",monospace;color:var(--ac);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.sub{color:var(--mu);max-width:640px;margin:0 0 36px}
+nav{position:sticky;top:0;z-index:20;background:rgba(11,17,24,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;gap:18px;min-height:64px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.logo{font-weight:700;margin-right:auto}
+.logo span{color:var(--ac)}
+nav ul{display:flex;gap:4px 18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--mu);font-size:.92rem;padding:6px 2px}
+nav ul a:hover{color:var(--tx)}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.95rem;border:1px solid var(--line);cursor:pointer;background:transparent;color:var(--tx);font-family:inherit}
+.btn.p{background:var(--ac);color:#04121c;border-color:var(--ac)}
+.btn.p:hover{background:var(--ac2)}
+.btn:hover{border-color:var(--ac)}
+.btn.sm{padding:7px 14px;font-size:.85rem}
+.hero{padding:96px 0 84px;background:radial-gradient(700px 320px at 80% 0,rgba(56,189,248,.12),transparent 70%)}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);letter-spacing:-.02em}
+.hero .role{font-size:clamp(1.1rem,2.4vw,1.45rem);color:var(--ac);margin:12px 0 18px;font-weight:600}
+.hero p{color:var(--mu);max-width:640px;font-size:1.05rem}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:.8rem;padding:4px 12px;border:1px solid var(--line);border-radius:99px;color:var(--mu);background:var(--card)}
+.tag.m{border-color:rgba(251,191,36,.35)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:1.05rem;margin-bottom:8px}
+.card p{color:var(--mu);margin:0 0 10px;font-size:.93rem}
+.ph{border-style:dashed}
+.badge{display:inline-block;font:500 .7rem "JetBrains Mono",monospace;padding:3px 9px;border-radius:6px;background:rgba(56,189,248,.12);color:var(--ac);margin-bottom:12px;text-transform:uppercase}
+.badge.w{background:rgba(251,191,36,.12);color:var(--warn)}
+dl{margin:0;font-size:.88rem}
+dt{color:var(--tx);font-weight:600;margin-top:10px}
+dd{margin:2px 0 0;color:var(--mu)}
+.shot{height:120px;border:1px dashed var(--line);border-radius:8px;display:grid;place-items:center;color:var(--mu);font-size:.8rem;margin:12px 0}
+.about{display:grid;gap:36px;grid-template-columns:1.4fr 1fr}
+.about p{color:var(--mu);margin:0 0 14px}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:.92rem}
+.facts span{color:var(--mu)}
+.cy{border-left:3px solid var(--ac);padding-left:22px}
+.cy .card{box-shadow:0 0 0 1px rgba(56,189,248,.04),0 8px 30px -18px rgba(56,189,248,.35)}
+.mk{background:#0e141b}
+.mk .card{padding:18px}
+.mk .eyebrow{color:var(--warn)}
+.cats{display:grid;gap:24px;grid-template-columns:1.25fr 1fr}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.9rem}
+.mk .skill{border-color:rgba(251,191,36,.18)}
+h3.cat{font-size:1rem;margin-bottom:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filters button.on{background:var(--ac);color:#04121c;border-color:var(--ac)}
+.empty{grid-column:1/-1;text-align:center;color:var(--mu);padding:34px;border:1px dashed var(--line);border-radius:12px}
+.contact{display:grid;gap:36px;grid-template-columns:1fr 1fr}
+.links{display:grid;gap:10px;margin-top:20px}
+.links a{display:flex;justify-content:space-between;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;font-size:.92rem}
+.links a:hover{border-color:var(--ac)}
+.links span{color:var(--mu)}
+form{display:grid;gap:12px}
+label{font-size:.85rem;color:var(--mu)}
+input,textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--tx);padding:11px 12px;font:inherit;margin-top:4px}
+input:focus,textarea:focus,.btn:focus-visible,a:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+footer{border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));color:var(--mu);font-size:.85rem;text-align:center}
+.modal{position:fixed;inset:0;background:rgba(5,9,14,.88);display:none;place-items:center;z-index:50;padding:20px}
+.modal.open{display:grid}
+.modal img{max-width:100%;max-height:80vh;border-radius:8px}
+@media(max-width:760px){.about,.cats,.contact{grid-template-columns:1fr}section{padding:60px 0}.cy{padding-left:14px}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap">
+<a class="logo" href="#home">Basmala<span>.</span>Salah</a>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#cybersecurity">Cybersecurity</a></li><li><a href="#marketing">Marketing</a></li><li><a href="#certificates">Certificates</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn p sm" href="assets/Basmala-Salah-CV.pdf" download>Download CV</a>
+</div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div class="eyebrow">Computer Science · Egypt</div>
+<h1>Basmala Salah</h1>
+<div class="role">Cybersecurity Student | Aspiring SOC Analyst</div>
+<p>Computer Science student building practical skills in cybersecurity, security monitoring, Linux, endpoint security, and Blue Team operations, with additional experience in digital marketing and content creation.</p>
+<div class="row"><a class="btn p" href="#cybersecurity">View My Projects</a><a class="btn" href="#contact">Contact Me</a><a class="btn" href="assets/Basmala-Salah-CV.pdf" download>Download CV</a></div>
+<div class="tags"><span class="tag">Cybersecurity</span><span class="tag">SOC</span><span class="tag">Blue Team</span><span class="tag">Linux</span><span class="tag">Security Monitoring</span><span class="tag m">Digital Marketing</span><span class="tag m">Content Creation</span></div>
+</div></header>
+
+<section id="about" class="alt"><div class="wrap">
+<div class="eyebrow">About</div><h2>About me</h2>
+<div class="about"><div>
+<p>I'm a Computer Science student specializing in cybersecurity, working toward a career as a SOC Analyst on a Blue Team. I focus on learning by doing: working through labs, monitoring and analyzing security events, and documenting what I learn.</p>
+<p>Alongside cybersecurity, I have experience in digital marketing and content creation, which I offer as a freelance service. I'm a student, still building my experience, and I keep learning every week.</p>
+</div>
+<ul class="facts"><li><span>Focus</span>SOC / Blue Team</li><li><span>Studying</span>Computer Science</li><li><span>Secondary</span>Marketing &amp; Content</li><li><span>Location</span>Egypt</li></ul></div>
+</div></section>
+
+<section id="cybersecurity"><div class="wrap cy">
+<div class="eyebrow">Main focus</div><h2>Cybersecurity projects</h2>
+<p class="sub">Hands-on labs and practical work, each one documented with what I did, the tools used, and what I learned.</p>
+<div class="grid" id="cyGrid"></div>
+<h3 class="cat" style="margin-top:44px">Training &amp; certifications</h3>
+<div class="grid" id="cyCerts"></div>
+</div></section>
+
+<section id="marketing" class="mk"><div class="wrap">
+<div class="eyebrow">Secondary skill set · Freelance</div><h2>Marketing &amp; content creation</h2>
+<p class="sub">Social media, content strategy, and design work I offer as a freelancer.</p>
+<div class="grid" id="mkGrid"></div>
+<h3 class="cat" style="margin-top:40px">Case studies</h3>
+<div class="grid" id="caseGrid"></div>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+<div class="eyebrow">Skills</div><h2>Skills</h2><p class="sub">Grouped by area. Cybersecurity skills are the main focus.</p>
+<div class="cats">
+<div><h3 class="cat">Cybersecurity</h3><div class="skills" id="skCy"></div></div>
+<div class="mk" style="background:none"><h3 class="cat">Marketing</h3><div class="skills" id="skMk"></div></div>
+</div></div></section>
+
+<section id="certificates"><div class="wrap">
+<div class="eyebrow">Gallery</div><h2>Certificates</h2><p class="sub">Select a certificate to see a larger preview.</p>
+<div class="filters" id="filters"></div>
+<div class="grid" id="certGrid"></div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+<div class="eyebrow">Contact</div><h2>Let's connect and build something valuable.</h2>
+<div class="contact"><div>
+<p class="sub" style="margin:0">Open to cybersecurity learning opportunities and freelance marketing projects.</p>
+<div class="links" id="links"></div></div>
+<form id="form"><label>Name<input name="n" required autocomplete="name"></label>
+<label>Email<input name="e" type="email" required autocomplete="email"></label>
+<label>Message<textarea name="m" rows="5" required></textarea></label>
+<button class="btn p" type="submit">Send message</button>
+<small style="color:var(--mu)">Opens your email app with the message prepared.</small></form></div>
+</div></section>
+
+<footer>© <span id="yr"></span> Basmala Salah · Cybersecurity Student</footer>
+<div class="modal" id="modal" role="dialog" aria-label="Certificate preview"><img id="mimg" alt=""></div>
+
+<script>
+/* ============ EDIT HERE: add new items to these lists ============ */
+const LINKS=[
+ ["LinkedIn","https://www.linkedin.com/in/basmala-salah355"],
+ ["GitHub","https://github.com/82892550"],
+ ["Khamsat","https://khamsat.com/user/basmala_salah7"],
+ ["Mostaql","https://mostaql.com/u/basmala_salah7"],
+ ["Nafezly","https://nafezly.com/u/basmala_salah"],
+ ["Email","mailto:basmalasalah355@gmail.com"]];
+// type: Academic | Personal | Lab | Hypothetical | Client | Real
+// Example: {title:"",type:"Lab",desc:"",tools:[],did:"",skills:[],link:"",shots:[]}
+const CY_PROJECTS=[];
+const MK_PROJECTS=[];   // {title,type,objective,audience,strategy,deliverables,kpis,link}
+const CASES=[{title:"SheNest Café — Marketing Case Study",type:"To be confirmed",note:"Research, 7Cs framework, content strategy, KPIs and visuals will be added once confirmed. Real and proposed results will be labelled separately."}];
+// cat: Cybersecurity | Marketing | Other
+// Example: {name:"",org:"",date:"",cat:"Cybersecurity",topics:[],img:"",verify:""}
+const CERTS=[];
+const SK_CY=["SOC Fundamentals","Blue Team Fundamentals","Security Monitoring","Windows Event Logs","Linux","Endpoint Security","Network Fundamentals","Security Tools"];
+const SK_MK=["Content Creation","Social Media Management","Content Strategy","Market Research","Social Media Marketing","Canva","CapCut","AI Content Tools"];
+/* ================================================================= */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dt=(k,v)=>v&&v.length?`<dt>${k}</dt><dd>${esc(Array.isArray(v)?v.join(", "):v)}</dd>`:"";
+function projCard(p){return `<article class="card"><span class="badge">${esc(p.type||"Project")}</span><h3>${esc(p.title)}</h3><p>${esc(p.desc||"")}</p>
+${p.shots&&p.shots.length?`<img src="${esc(p.shots[0])}" alt="${esc(p.title)} screenshot" loading="lazy" style="width:100%;border-radius:8px">`:""}
+<dl>${dt("Tools",p.tools)}${dt("What I did",p.did)}${dt("Skills demonstrated",p.skills)}${dt("Objective",p.objective)}${dt("Target audience",p.audience)}${dt("Strategy",p.strategy)}${dt("Deliverables",p.deliverables)}${dt("Results / KPIs",p.kpis)}</dl>
+${p.link?`<p style="margin-top:12px"><a class="btn sm" href="${esc(p.link)}" target="_blank" rel="noopener">View project</a></p>`:""}</article>`}
+function placeholder(t,msg){return `<article class="card ph"><span class="badge w">Coming soon</span><h3>${t}</h3><p>${msg}</p><div class="shot">Screenshots will appear here</div></article>`}
+function fill(id,list,ph){$(id).innerHTML=list.length?list.map(projCard).join(""):ph}
+fill("cyGrid",CY_PROJECTS,
+ placeholder("Cybersecurity project","Lab write-up with tools, my role, skills demonstrated and evidence.")+
+ placeholder("SOC / log analysis lab","Details to be added once completed and documented."));
+fill("mkGrid",MK_PROJECTS,placeholder("Marketing project","Objective, audience, strategy, deliverables and KPIs will be added here."));
+$("caseGrid").innerHTML=CASES.map(c=>`<article class="card ph"><span class="badge w">${esc(c.type)}</span><h3>${esc(c.title)}</h3><p>${esc(c.note)}</p></article>`).join("");
+const certCard=c=>`<article class="card" data-cat="${esc(c.cat)}"><span class="badge">${esc(c.cat)}</span><h3>${esc(c.name)}</h3><p>${esc(c.org)} · ${esc(c.date)}</p>
+${c.img?`<img src="${esc(c.img)}" alt="${esc(c.name)} certificate" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in" tabindex="0" data-big="${esc(c.img)}">`:""}
+<dl>${dt("Topics",c.topics)}</dl>${c.verify?`<p style="margin-top:10px"><a class="btn sm" href="${esc(c.verify)}" target="_blank" rel="noopener">Verify</a></p>`:""}</article>`;
+$("cyCerts").innerHTML=CERTS.filter(c=>c.cat==="Cybersecurity").map(certCard).join("")||`<div class="empty">Relevant cybersecurity training and certificates will be listed here.</div>`;
+let cur="All";
+function drawCerts(){const l=CERTS.filter(c=>cur==="All"||c.cat===cur);$("certGrid").innerHTML=l.length?l.map(certCard).join(""):`<div class="empty">Certificates will be added here.</div>`}
+$("filters").innerHTML=["All","Cybersecurity","Marketing","Other"].map((f,i)=>`<button class="btn sm${i?"":" on"}" data-f="${f}">${f}</button>`).join("");
+$("filters").onclick=e=>{const f=e.target.dataset.f;if(!f)return;cur=f;[...$("filters").children].forEach(b=>b.classList.toggle("on",b.dataset.f===f));drawCerts()};
+drawCerts();
+document.addEventListener("click",e=>{const b=e.target.dataset&&e.target.dataset.big;if(b){$("mimg").src=b;$("modal").classList.add("open")}else if(e.target.id==="modal"||e.target.id==="mimg")$("modal").classList.remove("open")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("modal").classList.remove("open")});
+$("skCy").innerHTML=SK_CY.map(s=>`<div class="skill">${s}</div>`).join("");
+$("skMk").innerHTML=SK_MK.map(s=>`<div class="skill">${s}</div>`).join("");
+$("links").innerHTML=LINKS.map(([n,u])=>`<a href="${u}" ${u.startsWith("http")?'target="_blank" rel="noopener"':""}>${n}<span>↗</span></a>`).join("");
+$("form").onsubmit=e=>{e.preventDefault();const f=e.target;location.href="mailto:basmalasalah355@gmail.com?subject="+encodeURIComponent("Portfolio message from "+f.n.value)+"&body="+encodeURIComponent(f.m.value+"\n\n"+f.n.value+" ("+f.e.value+")")};
+$("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
